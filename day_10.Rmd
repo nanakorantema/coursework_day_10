@@ -34,3 +34,9 @@ small <- x %>%
   slice_sample(prop = .001)
 ```
 
+```{r}
+x %>% 
+  ggplot(aes(x = bday)) +
+    geom_bar()
+```
+
