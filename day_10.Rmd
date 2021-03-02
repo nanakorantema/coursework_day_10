@@ -26,3 +26,11 @@ x <- read_csv(file = "~/bunmd_v2.csv",
   socstate_string = col_character()))
 ```
 
+```{r}
+ # how many deaths will there be next month? What will the ratio of deaths on
+ # April 1 be to deaths on the other days?
+
+small <- x %>% 
+  slice_sample(prop = .001)
+```
+
